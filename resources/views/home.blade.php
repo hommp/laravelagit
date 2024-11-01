@@ -21,7 +21,7 @@
 
             <h1 class="">This home page!!!</h1>
             @if(Auth::check())
-            <div style="display:flex; gap: 10px; flex-wrap: wrap;  justify-content: center;">
+            <div style="display:flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
                 <div class="card w-10" style="width: 18rem;">
                     <img src="https://i.pinimg.com/736x/84/12/96/8412965448700d65443aa3a355d08d86.jpg" class="card-img-top" alt="">
                     <div class="card-body">
