@@ -19,7 +19,7 @@
             @endforeach
             @endif
 
-            <h1 class="">This home page</h1>
+            <h1 class="">This home page!!!</h1>
             @if(Auth::check())
             <div style="display:flex; gap: 10px; flex-wrap: wrap;  justify-content: center;">
                 <div class="card w-10" style="width: 18rem;">
