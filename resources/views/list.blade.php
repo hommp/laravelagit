@@ -5,17 +5,17 @@ List
 @endsection
 
 @section('content')
-<div class="container">
+<div class="container mb-4 mt-4">
     <h1 class="col-md-12">This list page</h1>
 
     @if(session('success'))
-    <div class="alert alert-success mt-4">
+    <div class="alert alert-success">
         {{ session('success') }}
     </div>
     @endif
 
     @if($errors->any())
-    <div class="alert alert-danger mt-4">
+    <div class="alert alert-danger">
         @foreach ($errors->all() as $err)
         {{ $err }}<br>
         @endforeach
@@ -42,7 +42,8 @@ List
                         <form action="{{ route('users.destroy', $user->id) }}" method="POST" style="display:inline;">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this user?');">Delete</button>
+                            <button type="submit" class="btn btn-danger btn-sm"
+                                onclick="return confirm('Are you sure you want to delete this user?');">Delete</button>
                         </form>
                     </td>
                 </tr>

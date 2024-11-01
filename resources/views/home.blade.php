@@ -7,13 +7,13 @@
     <div class="row">
         <div class="col-md-12">
             @if(session('success'))
-            <div class="alert alert-success mt-4">
+            <div class="alert alert-success">
                 {{session('success') }}
             </div>
             @endif
             @if($errors->any())
             @foreach ($errors->all() as $err)
-            <div class="alert alert-danger mt-4">
+            <div class="alert alert-danger">
                 {{ $err }}
             </div>
             @endforeach
@@ -25,7 +25,7 @@
                     <div class="container px-4 px-lg-5">
                         <div class="row gx-4 gx-lg-5">
                             <div class="col-lg-6">
-                                <h1>Welcome To Home Page</h1>
+                                <h1>Home Page</h1>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
                                     voluptates rerum eveniet sapiente repellat esse, doloremque quod
